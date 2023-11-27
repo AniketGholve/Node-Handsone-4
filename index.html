@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="password" id="">
+    <button onclick="sendData(333)">Click Me </button>
+</body>
+<script>
+    function sendData(data) {
+        fetch("http://localhost:3000/", {
+            method: "post", body: '{"password": "333"}', headers: {
+                "Content-Type": "application/json"
+            },
+        })
+    }
+</script>
+
+</html>
