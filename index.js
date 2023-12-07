@@ -42,8 +42,6 @@ app.post("/login", async (req, res) => {
         return res.send({ err: "Invalid User" })
     }
 })
-
-
 app.get("/getData",(req,res)=>{
     res.send(productData)
 })
